@@ -5284,6 +5284,9 @@ extern "C" {
     /// Apply the same font settings as the editor to `target`.
     #[wasm_bindgen(method, js_class = "ICodeEditor", js_name = "applyFontInfo")]
     pub fn apply_font_info(this: &ICodeEditor, target: &HtmlElement);
+
+    #[wasm_bindgen(method, js_class = "ICodeEditor", js_name = "setHiddenAreas")]
+    pub fn set_hidden_areas(this: &ICodeEditor, areas: Vec<Range>);
 }
 
 #[wasm_bindgen]
